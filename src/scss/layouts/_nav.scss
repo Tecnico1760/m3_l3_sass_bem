@@ -1,0 +1,41 @@
+
+@use '../abstracts/variables' as v;
+
+@use '../abstracts/mixins' as m;
+
+
+.nav{
+    background-color: v.$color-uno;
+    color: v.$color-cinco;
+    min-height: 80px;
+    @include m.center-content;
+  
+
+     &__list{
+         @include m.center-content;
+
+    }
+
+    &__item {
+    list-style-type: none;
+    margin: 0 1rem;
+    }
+
+
+    &__link{
+
+            color: v.$color-cinco;
+        text-decoration: none;  
+
+        &--active{ 
+            color:v.$color-cuatro;
+            transition: all 1.5s;
+        }
+        &:hover{
+           font-size: 1.5rem;
+        }
+    }
+
+}
+
+
