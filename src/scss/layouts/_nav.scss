@@ -24,15 +24,17 @@
 
     &__link{
 
-            color: v.$color-cinco;
+        color: v.$color-cinco;
         text-decoration: none;  
+        transition: all 1.1s ease;
+        display: inline-block;
 
         &--active{ 
             color:v.$color-cuatro;
-            transition: all 1.5s;
+            
         }
         &:hover{
-           font-size: 1.5rem;
+           transform: scale(1.2);
         }
     }
 

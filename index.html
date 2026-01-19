@@ -1,34 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo sass</title>
-    <link rel="stylesheet" href="./css/main.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejemplo sass</title>
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
+
 <body>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link nav__link--active" href="">Home</a>
+      </li>
+      <li class="nav__item"><a class="nav__link" href="">Productos</a></li>
+      <li class="nav__item"><a class="nav__link" href="">Contactos</a></li>
+    </ul>
+  </nav>
 
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link nav__link--active" href="">Home</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Productos</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Contactos</a></li>
-        </ul>
+  <header>
+    <h1>Hola Mundo</h1>
+  </header>
 
-    </nav>
+  <main>
+    <section class="container-cards">
+      <div class="container-cards__item">
+        <div class="card">
+          <a class="card1" href="#">
+            <p>This is heading</p>
+            <p class="card__text--small">
+              Card description with lots of great facts and interesting
+              details.
+            </p>
+            <div class="card__go-corner" href="#">
+              <div class="card__go-arrow">→</div>
+            </div>
+          </a>
+        </div>
+      </div>
 
-    <header>
-        <h1>Hola Mundo</h1>
-    </header>
+      <div class="container-cards__item">
+        <div class="card">
+          <a class="card__inner" href="#">
+            <p class="card__title">Encabezado dos</p>
+            <p class="card__text--small">Contenido de la tarjeta dos para que quede igual a la anterior</p>
+            <div class="card__go-corner" href="#">
+              <div class="card__go-arrow">
+                →
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
 
-    <main>
-    </main>
-
-    <footer>
 
 
-    </footer>
-    
+
+
+
+
+    </section>
+  </main>
+
+  <footer></footer>
 </body>
+
 </html>
